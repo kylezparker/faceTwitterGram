@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}{{ share.title }}{% endblock title %}
+{% block content %}
+<h1>{{ share.title }}</h1>
+<!-- <h1>{{ share.subtitle }}</h1> -->
+<!-- <strong>Created on:{{ article.created_on }}</strong>
+<strong>Created by:{{ article.author }}</strong> -->
+<p>{{ share.body }}</p>
+{% if user.id == post.author.id %}
+<p>
+    <a href="{% url 'share_edit' share.id %}" class="btn btn-primary">Edit</a>
+</p>
+<p>
+    <a href="{% url 'share_delete' share.id %}" class="btn btn-danger">Delete</a>
+</p>
+{% endif %}
+{% endblock content %}
