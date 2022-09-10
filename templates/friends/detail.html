@@ -6,7 +6,7 @@
 <!-- <strong>Created on:{{ article.created_on }}</strong>
 <strong>Created by:{{ article.author }}</strong> -->
 <p>{{ share.body }}</p>
-{% if user.id == post.author.id %}
+{% if user.id == share.author.id %}
 <p>
     <a href="{% url 'share_edit' share.id %}" class="btn btn-primary">Edit</a>
 </p>

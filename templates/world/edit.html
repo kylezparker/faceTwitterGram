@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
-{% block title %}New Share{% endblock title %}
+{% block title %}Edit Post{% endblock title %}
+
 {% block content %}
-<h1>New Share</h1>
+<h1>Edit Post</h1>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Create" class="btn btn-success">
+    <input type="submit" value="Edit">
 </form>
 {% endblock content %}
