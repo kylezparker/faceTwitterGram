@@ -18,6 +18,8 @@ class Share(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("share_list", args=[self.id])
+        return reverse("share_list")
 
 # Create your models here.
+    # def get_absolute_url(self):
+    #     return reverse("share_list", args=[self.id])

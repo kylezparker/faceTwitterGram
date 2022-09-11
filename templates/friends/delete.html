@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
-{% block title %}Delete Share{% endblock title %}
+{% block title %}Delete Post{% endblock title %}
 
 {% block content %}
-<h1>Delete Share</h1>
-<p>Are you sure you want to delete "{{ share.title }}"?</p>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="confirm">
-</form>
+<div style="padding-top:100px;">
+    <div class="card">
+        <div class="card-body">
+            <h1 style="padding-top:10px; padding-bottom:15px;font-weight:550;">Delete Post</h1>
+            <p>Are you sure you want to delete "{{ share.title }}"?</p>
+            <form style="font-weight:550;" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input style="margin-top:20px;" type="submit" value="Delete" class="btn btn-danger">
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock content %}

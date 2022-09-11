@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}Login{% endblock title %}
 {% block content %}
-<h1>Login</h1>
-<form method="POST">
+<h1 style="padding-top:25px; padding-bottom:15px;font-weight:550;">Login</h1>
+<form style="font-weight:550;" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Log in" class="btn btn-success">
+    <input style="margin-top:20px;" type="submit" value="login" class="btn btn-primary">
 </form>
 {% endblock content %}

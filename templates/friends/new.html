@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}New Share{% endblock title %}
 {% block content %}
-<h1>New Share</h1>
-<form method="POST">
+<h1 style="padding-top:25px; padding-bottom:15px;font-weight:550;">Post</h1>
+<form style="font-weight:550;" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Create" class="btn btn-success">
+    <input style="margin-top:20px;" type="submit" value="Create" class="btn btn-success">
 </form>
 {% endblock content %}

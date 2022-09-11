@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}Shares{% endblock title %}
 {% block content %}
-<h1>Shares</h1>
+<h1 style="padding-top:25px;padding-bottom:15px;">Posts</h1>
 {% for share in share_list %}
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title">{{ share.title }}</h5>
+        <h5 class="card-title">{{ share.author }}</h5>
         <!-- <h6 class="card-subtitle mb-2 text-muted">{{ article.subtitle }}</h6> -->
-        <p class="card-text">{{ share.body|truncatechars:500 }}</p>
-        <a href="{% url 'share_detail' share.id %}" class="card-link">Continue reading...</a>
+        <p class="card-text" style="font-size:20px;">{{ share.body|truncatechars:500 }}</p>
+        <a href="{% url 'share_detail' share.id %}" class="card-link">More</a>
     </div>
 </div>
 <br />
