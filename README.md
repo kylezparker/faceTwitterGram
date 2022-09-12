@@ -2,7 +2,7 @@ This is a social media website.
 
 
 
-This project still needs work in may areas. accounts/urls, accounts/models, accounts/views all need work. world/urls, world/models, world/views. 
+This project still needs work in many areas. accounts/urls, accounts/models, accounts/views all need work. world/urls, world/models, world/views. 
 
 The above needs to be taken care of for CRUD. After that the social media part of the site must be implemented. 
 
@@ -18,3 +18,7 @@ email service has not been set up so password reset and change do not function; 
 
 project has not been deployed or set up on heroku/other service, currently using django test server.
 
+
+Update
+
+Basic CSS has been used for pages not of the '/world' pathway
